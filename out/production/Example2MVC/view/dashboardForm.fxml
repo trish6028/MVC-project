@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardformContext" prefHeight="492.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <AnchorPane fx:id="sidepaneContext" prefHeight="499.0" prefWidth="146.0" style="-fx-background-color: #3dc1d3;">
+         <children>
+            <Label alignment="CENTER" prefHeight="78.0" prefWidth="146.0" style="-fx-background-color: #0abde3;" text="      &#10;           TRISHAN&#10;                   Grocery&#10;" textFill="#594747">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-grocery-64.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutY="78.0" prefHeight="54.0" prefWidth="146.0" style="-fx-background-color: #3dc1d3;" text="           Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="132.0" onAction="#btnCustomer" prefHeight="54.0" prefWidth="146.0" style="-fx-background-color: #3dc1d3;" text="        Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="186.0" onAction="#btnItem" prefHeight="54.0" prefWidth="146.0" style="-fx-background-color: #3dc1d3;" text="Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="240.0" onAction="#btnOrder" prefHeight="54.0" prefWidth="146.0" style="-fx-background-color: #3dc1d3;" text=" Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="23.0" fitWidth="21.0" layoutX="10.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-dashboard-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="6.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-customer-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="30.0" layoutX="11.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-ingredients-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="7.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-order-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="52.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-cancel-64.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="41.0" layoutY="455.0" onAction="#btnExit" opacity="0.0" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: #3dc1d3;" text="Exit">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="35.0" layoutY="413.0" onAction="#btnExit" opacity="0.0" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: #3dc1d3;" text="Exit">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblTime" layoutX="39.0" layoutY="365.0" prefHeight="17.0" prefWidth="56.0" text=" " />
+            <Label fx:id="lblDate" layoutX="31.0" layoutY="388.0" prefHeight="17.0" prefWidth="82.0" text=" " />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loadpaneContext" layoutX="144.0" layoutY="-1.0" prefHeight="500.0" prefWidth="598.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="599.0" style="-fx-background-color: #273c75;">
+         <children>
+            <Label alignment="CENTER" layoutX="182.0" layoutY="4.0" prefHeight="45.0" prefWidth="253.0" text="Place Order Form" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="11.0" layoutY="66.0" text="Order Id">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox layoutX="9.0" layoutY="102.0" prefHeight="31.0" prefWidth="118.0" promptText="Cust Id" />
+      <JFXComboBox layoutX="8.0" layoutY="158.0" prefHeight="31.0" prefWidth="112.0" promptText="Item Code" />
+      <JFXTextField layoutX="139.0" layoutY="158.0" prefHeight="31.0" prefWidth="98.0" promptText="Description" />
+      <JFXTextField layoutX="253.0" layoutY="158.0" prefHeight="31.0" prefWidth="104.0" promptText="qty on hand" />
+      <JFXTextField layoutX="376.0" layoutY="158.0" prefHeight="31.0" prefWidth="111.0" promptText="Unit Price" />
+      <JFXTextField layoutX="529.0" layoutY="157.0" prefHeight="31.0" prefWidth="58.0" promptText="qty" />
+      <TableView layoutX="49.0" layoutY="280.0" prefHeight="170.0" prefWidth="506.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ItemCode" />
+          <TableColumn prefWidth="101.66665649414062" text="Description" />
+            <TableColumn prefWidth="83.0" text="qty" />
+            <TableColumn prefWidth="118.0" text="Price" />
+            <TableColumn prefWidth="158.33334350585938" text="Total" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="367.0" layoutY="224.0" onAction="#btnAdd" opacity="0.64" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: blue;" styleClass="edge-button" stylesheets="@../css/css.css" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="454.0" layoutY="458.0" prefHeight="28.0" prefWidth="103.0" style="-fx-background-color: #4cd137;" styleClass="edge-button" stylesheets="@../css/css.css" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="442.0" layoutY="223.0" onAction="#btnAdd" opacity="0.64" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #e84118;" styleClass="edge-button" stylesheets="@../css/css.css" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField layoutX="165.0" layoutY="104.0" prefHeight="31.0" prefWidth="134.0" promptText="Description" text="Cus Name" />
+      <JFXTextField layoutX="370.0" layoutY="104.0" prefHeight="31.0" prefWidth="139.0" promptText="Description" text="Cus Address" />
+      <Label layoutX="91.0" layoutY="68.0" prefHeight="21.0" prefWidth="58.0" text="O001" />
+      <Label layoutX="17.0" layoutY="462.0" text="Total :" textFill="#f50808">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="464.0" text="00.00" textFill="#ff0808">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
